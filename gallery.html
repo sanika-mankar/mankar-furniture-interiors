@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Interior Gallery | Mankar Furniture & Interiors</title>
+
   <link rel="stylesheet" href="style.css">
+
   <style>
     .gallery-page {
       min-height: 80vh;
@@ -67,37 +70,96 @@
     }
   </style>
 </head>
+
 <body>
 
+  <!-- HEADER -->
   <header class="header">
+
     <a href="index.html#home" class="brand">
-      <span class="brand-mark">M</span>
-      <span class="brand-name">MANKAR
+
+      <span class="brand-mark">
+        <svg viewBox="0 0 100 85" xmlns="http://www.w3.org/2000/svg">
+
+          <path d="M8 42 L50 5 L92 42"
+                fill="none"
+                stroke="#b58a3c"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+
+          <path d="M18 38 V78 H82 V38"
+                fill="none"
+                stroke="#b58a3c"
+                stroke-width="3"/>
+
+          <path d="M25 72 V42 L50 62 L75 42 V72"
+                fill="none"
+                stroke="#b58a3c"
+                stroke-width="7"
+                stroke-linecap="square"
+                stroke-linejoin="miter"/>
+
+          <path d="M72 20 V9 H83 V31"
+                fill="none"
+                stroke="#b58a3c"
+                stroke-width="3"/>
+
+        </svg>
+      </span>
+
+      <span class="brand-name">
+        MANKAR
         <small>FURNITURE & INTERIORS</small>
       </span>
+
     </a>
-    <a class="outline-button" href="index.html#services">BACK TO SERVICES</a>
+
+    <a class="outline-button" href="index.html#services">
+      BACK TO SERVICES
+    </a>
+
   </header>
 
+  <!-- GALLERY SECTION -->
   <main class="gallery-page">
-    <a class="gallery-back" href="index.html#services">← Back to all services</a>
+
+    <a class="gallery-back" href="index.html#services">
+      ← Back to all services
+    </a>
 
     <div class="gallery-heading">
+
       <p class="eyebrow">OUR WORK</p>
+
       <h1 id="galleryTitle">Interior Gallery</h1>
+
       <p>Explore our interior designs and craftsmanship.</p>
+
     </div>
 
     <div class="gallery-grid" id="galleryGrid"></div>
+
     <p class="gallery-empty" id="galleryMessage" hidden></p>
+
   </main>
 
+  <!-- FOOTER -->
   <footer>
+
     <p>MANKAR FURNITURE & INTERIORS</p>
+
     <p>We Furnish the Dreams...!</p>
-    <small>© <span id="year"></span> Mankar Furniture & Interiors. All rights reserved.</small>
+
+    <small>
+      © <span id="year"></span>
+      Mankar Furniture & Interiors. All rights reserved.
+    </small>
+
   </footer>
 
+  <!-- JAVASCRIPT -->
   <script src="gallery.js"></script>
+
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 :root {
   --cream: #f8f4ec;
   --ivory: #fffdf8;
@@ -31,6 +32,8 @@ a {
   text-decoration: none;
 }
 
+/* HEADER */
+
 .header {
   min-height: 92px;
   padding: 14px 6%;
@@ -45,51 +48,67 @@ a {
   box-shadow: 0 2px 14px #30251e0d;
 }
 
+/* LOGO */
+
 .brand {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
+  text-decoration: none;
+  color: var(--brown);
 }
 
 .brand-mark {
-  width: 58px;
-  height: 58px;
-  background: #080808;
-  color: #d8b66e;
-  border: 1px solid var(--gold);
-  display: grid;
-  place-items: center;
-  font-family: Georgia, serif;
-  font-size: 34px;
-  font-weight: bold;
+  width: 78px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  flex-shrink: 0;
+}
+
+.brand-mark svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .brand-name {
   font-family: Georgia, serif;
-  font-size: 21px;
+  font-size: 27px;
   font-weight: bold;
   letter-spacing: 2px;
-  line-height: 1.3;
+  line-height: 1.2;
+  color: var(--gold-dark);
 }
 
 .brand-name small {
   display: block;
   font-family: Arial, sans-serif;
-  font-size: 9px;
+  font-size: 10px;
+  font-weight: 600;
   letter-spacing: 2px;
-  margin-top: 4px;
+  margin-top: 5px;
+  color: var(--brown);
 }
+
+/* NAVIGATION */
 
 .header nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 26px;
+  margin-left: auto;
 }
 
 .header nav a {
   font-size: 13px;
   font-weight: 600;
+  white-space: nowrap;
   transition: color 0.2s;
 }
 
@@ -106,6 +125,8 @@ a {
   cursor: pointer;
 }
 
+/* HOME HERO SECTION */
+
 .hero {
   min-height: 610px;
   display: flex;
@@ -114,8 +135,7 @@ a {
   color: var(--white);
   background:
     linear-gradient(90deg, rgba(22, 18, 14, 0.76), rgba(22, 18, 14, 0.30)),
-    url("images/hero-living-room.jpg") center 55% / cover no-repeat,
-    #57483a;
+    url("images/front pic.jpeg") center center / cover no-repeat;
 }
 
 .hero-content {
@@ -149,6 +169,8 @@ a {
   margin-bottom: 30px;
 }
 
+/* BUTTONS */
+
 .gold-button,
 .outline-button {
   display: inline-flex;
@@ -179,6 +201,8 @@ a {
   border: 1px solid var(--gold);
 }
 
+/* FEATURES */
+
 .features {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -208,6 +232,8 @@ a {
   color: var(--muted);
 }
 
+/* GENERAL SECTIONS */
+
 .section {
   padding: 90px 8%;
   text-align: center;
@@ -224,6 +250,8 @@ a {
 .section h3 {
   font-size: 17px;
 }
+
+/* ABOUT */
 
 .about {
   max-width: 1100px;
@@ -245,6 +273,8 @@ a {
   font-size: 15px;
 }
 
+/* SERVICES */
+
 .services {
   background: var(--cream);
 }
@@ -263,10 +293,13 @@ a {
 }
 
 .service-card {
+  display: block;
   background: var(--ivory);
   border: 1px solid #eee5d7;
   text-align: left;
   overflow: hidden;
+  color: inherit;
+  text-decoration: none;
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
@@ -289,33 +322,46 @@ a {
   font-weight: 500;
 }
 
+/* SERVICE IMAGES */
+
 .living {
-  background-image: linear-gradient(#30251e08, #30251e08), url("images/living-room.jpg");
+  background-image: url("images/Living Room.jpeg");
 }
 
 .kitchen {
-  background-image: url("images/kitchen.jpg");
+  background-image: url("images/kitchen-1.jpg");
 }
 
 .bedroom {
-  background-image: url("images/bedroom.jpg");
+  background-image: url("images/bedroom-1.jpeg");
 }
 
 .wardrobe {
-  background-image: url("images/wardrobe.jpg");
+  background-image: url("images/wardrobe-1.jpeg");
 }
 
 .commercial {
-  background-image: url("images/commercial.jpg");
+  background-image: url("images/commercial-1.jpeg");
 }
 
 .other {
-  background-image: url("images/other-interiors.jpg");
+  background-image: url("images/other interiors-1.jpeg");
 }
 
 .design {
-  background-image: url("images/design-concept.jpg");
+  background-image: url("images/2D&3D-1.jpeg");
 }
+
+.view-gallery {
+  display: inline-block;
+  margin: 0 0 18px;
+  color: #a98245;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* WHY CHOOSE US */
 
 .why-us > p:not(.eyebrow) {
   max-width: 760px;
@@ -348,6 +394,8 @@ a {
   font-size: 14px;
 }
 
+/* CONTACT */
+
 .contact {
   background: #30251e;
   color: var(--white);
@@ -373,6 +421,8 @@ a {
   color: #e2c68c;
 }
 
+/* FOOTER */
+
 footer {
   text-align: center;
   background: #211a15;
@@ -396,6 +446,53 @@ footer small {
   font-size: 11px;
 }
 
+/* FULL SCREEN GALLERY IMAGE PREVIEW */
+
+.gallery-item img {
+  cursor: zoom-in;
+}
+
+.image-preview {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.92);
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.image-preview.active {
+  display: flex;
+}
+
+.image-preview img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.close-preview {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.close-preview:hover {
+  color: #c9a66b;
+}
+
+/* TABLET RESPONSIVE */
+
 @media (max-width: 1000px) {
   .header {
     padding: 14px 4%;
@@ -410,13 +507,15 @@ footer small {
   }
 
   .brand-name {
-    font-size: 17px;
+    font-size: 21px;
   }
 
   .service-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* MOBILE RESPONSIVE */
 
 @media (max-width: 720px) {
   .header {
@@ -425,13 +524,12 @@ footer small {
   }
 
   .brand-mark {
-    width: 46px;
-    height: 46px;
-    font-size: 27px;
+    width: 55px;
+    height: 50px;
   }
 
   .brand-name {
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 1px;
   }
 
@@ -471,7 +569,7 @@ footer small {
   .hero {
     min-height: 540px;
     padding: 55px 7%;
-    background-position: 58% center;
+    background-position: center center;
   }
 
   .hero h1 {
@@ -508,7 +606,23 @@ footer small {
   .contact-details {
     padding: 24px 15px;
   }
+
+  .image-preview {
+    padding: 15px;
+  }
+
+  .image-preview img {
+    max-width: 100%;
+    max-height: 85%;
+  }
+
+  .close-preview {
+    top: 10px;
+    right: 20px;
+  }
 }
+
+/* REDUCED MOTION */
 
 @media (prefers-reduced-motion: reduce) {
   html {
